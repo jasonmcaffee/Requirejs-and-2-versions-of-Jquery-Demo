@@ -24,7 +24,7 @@ define([
 	});
 ```
 
-### Demo : Load 2 Versions of Jquery
+### Load 2 Versions of Jquery
 Now we can load the 2 versions of jquery 
 
 ``` javascript
@@ -37,5 +37,8 @@ Now we can load the 2 versions of jquery
 			alert('I have jquery version : ' + $171.fn.jquery + ' and jquery version : ' + $163.fn.jquery + ' successfully loaded.');
 		 });
 ```
+
+### Demo
+Demo of this code running can be found here : [RequireJS & Multiple Versions of Jquery Demo](http://jasonmcaffee.com/requireMultipleVersionsOfJquery/index.html)
 
 # [Jason McAffee](http://codeceratops.jasonmcaffee.com)

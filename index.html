@@ -24,11 +24,11 @@
 		        <div>
 		        	 //demonstrate loading 2 versions of jquery into a module <br/>
 					  	 require([ <br/>
-							 'libs/jquery/jquery1.7.1.module',  //we can use this shortcut now that it was established in main.js <br/>
-							 'libs/jquery/jquery1.6.3.module' <br/>
-							 ],  <br/>
+							 &nbsp;'libs/jquery/jquery1.7.1.module',   <br/>
+							 &nbsp;'libs/jquery/jquery1.6.3.module' <br/>
+							 &nbsp;],  <br/>
 							 function($171, $163){<br/>
-								 alert('I have jquery version : ' + $171.fn.jquery + ' and jquery version : ' + $163.fn.jquery + ' successfully loaded.'); <br/>
+							 &nbsp;&nbsp;alert('I have jquery version : ' + $171.fn.jquery + ' and jquery version : ' + $163.fn.jquery + ' successfully loaded.'); <br/>
 							 });<br/>
 		        </div>
 	        </article>
@@ -41,7 +41,7 @@
     	
      //demonstrate loading 2 versions of jquery into a module
   	 require([
-		  'libs/jquery/jquery1.7.1.module', //can't use the shortcut defined in main.js for some reason. have to use full path...
+		  'libs/jquery/jquery1.7.1.module', 
 		  'libs/jquery/jquery1.6.3.module'
 		 ], 
 		 function($171, $163){
