@@ -6,6 +6,8 @@ Simple demonstration using requirejs to load 2 isolated versions of jquery.
 
 ## Usage Example
 Loading 2 isolated versions of jquery is pretty simple. First you need to wrap jquery in as an AMD compliant module.
+This shows one of the great advantages of the AMD API that requirejs provides us.
+More info can be found here: [CommonJS Asynchronous Definition](http://wiki.commonjs.org/wiki/Modules/AsynchronousDefinition) and here [RequireJS](http://requirejs.org/)
 
 ### Wrap Non-Compliant AMD Modules (e.g. jquery) With an AMD Module
 Note: using the order! requirejs plugin is needed to accomplish this, as it ensures that jquery is loaded before it's module wrapper is executed.
@@ -28,10 +30,12 @@ Now we can load the 2 versions of jquery
 ``` javascript
      //demonstrate loading 2 versions of jquery into a module
   	 require([
-		  'libs/jquery/jquery1.7.1.module', //can't use the shortcut defined in main.js for some reason. have to use full path...
+		  'libs/jquery/jquery1.7.1.module',
 		  'libs/jquery/jquery1.6.3.module'
 		 ], 
 		 function($171, $163){
 			alert('I have jquery version : ' + $171.fn.jquery + ' and jquery version : ' + $163.fn.jquery + ' successfully loaded.');
 		 });
 ```
+
+# [Jason McAffee](http://codeceratops.jasonmcaffee.com)
