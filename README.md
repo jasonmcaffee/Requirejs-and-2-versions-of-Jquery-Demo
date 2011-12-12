@@ -9,6 +9,7 @@ Loading 2 isolated versions of jquery is pretty simple. First you need to wrap j
 
 ### Wrap Non-Compliant AMD Modules (e.g. jquery) With an AMD Module
 Note: using the order! requirejs plugin is needed to accomplish this, as it ensures that jquery is loaded before it's module wrapper is executed.
+
 ``` javascript
 //file: libs/jquery/jquery1.6.3.module.js
 define([
