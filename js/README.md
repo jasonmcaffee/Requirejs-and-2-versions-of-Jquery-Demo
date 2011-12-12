@@ -1,0 +1,1 @@
+Simple demonstration using requirejs to load 2 isolated versions of jquery.

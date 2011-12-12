@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Requirejs oriented project structure</title>
+        
+        <!-- Load the script "js/main.js" as our entry point, along with requirejs -->
+				<script data-main="js/main" src="js/libs/require/require.js"></script>
+				
+    </head>
+    <body>
+    	
+    		<section>
+    			
+		     	<h1>Requirejs with multiple versions of jquery demo</h1>
+		        
+	        <article>
+		        <p>
+		        	Just a simple demonstration showing a module declaring 2 versions of jquery as dependencies. 
+		        </p>
+		        <p>
+		        	The code that is executing is:
+		        </p>
+		        <div>
+		        	 //demonstrate loading 2 versions of jquery into a module <br/>
+					  	 require([ <br/>
+							 'libs/jquery/jquery1.7.1.module',  //we can use this shortcut now that it was established in main.js <br/>
+							 'libs/jquery/jquery1.6.3.module' <br/>
+							 ],  <br/>
+							 function($171, $163){<br/>
+								 alert('I have jquery version : ' + $171.fn.jquery + ' and jquery version : ' + $163.fn.jquery + ' successfully loaded.'); <br/>
+							 });<br/>
+		        </div>
+	        </article>
+	        
+        </section>
+        
+    </body>
+    
+    <script type="text/javascript">
+    	
+     //demonstrate loading 2 versions of jquery into a module
+  	 require([
+		  'libs/jquery/jquery1.7.1.module', //can't use the shortcut defined in main.js for some reason. have to use full path...
+		  'libs/jquery/jquery1.6.3.module'
+		 ], 
+		 function($171, $163){
+			alert('I have jquery version : ' + $171.fn.jquery + ' and jquery version : ' + $163.fn.jquery + ' successfully loaded.');
+		 });
+    	
+    </script>
+</html>
